@@ -1,4 +1,4 @@
 package part_1_readable_good;
 
-public record InventoryItem(String product, String image, String description, int price, int id, String currency) {
+public record InventoryItem( int id, String product, String image, String description, int price, String currency) {
 }

@@ -5,9 +5,9 @@ import java.util.List;
 public class Project {
     String currency = "usd";
     List<InventoryItem> inventory = List.of(
-            new InventoryItem("Flashlight", "🔦", "A really great flashlight", 100, 1, "usd"),
-            new InventoryItem("Tin can", "🥫", "Pretty much what you would expect from a tin can", 32, 2, "usd"),
-            new InventoryItem("Cardboard Box", "📦", "It holds things", 5, 3, "usd")
+            new InventoryItem(0,"Flashlight", "🔦", "A really great flashlight", 100, "usd"),
+            new InventoryItem(1,"Tin can", "🥫", "Pretty much what you would expect from a tin can", 32, "usd"),
+            new InventoryItem(2,"Cardboard Box", "📦", "It holds things", 5, "usd")
     );
     String tableHeader = "| Product         | Image | Description                                        | Price |%n";
     String tableBorder = "+-----------------+-------+----------------------------------------------------+-------+%n";
