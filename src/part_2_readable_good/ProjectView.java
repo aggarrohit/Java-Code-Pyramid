@@ -1,31 +1,21 @@
 package part_2_readable_good;
 
+import part_2_readable_good.data.Currencies;
 import part_2_readable_good.utilities.CurrencyItem;
-import part_2_readable_good.utilities.InventoryItem;
 import part_2_readable_good.utilities.InventoryTable;
 
-import java.util.List;
-
 public class ProjectView {
-    private final List<CurrencyItem> currencies;
-    private final List<InventoryItem> inventory;
-
     // Constructor
-    public ProjectView(List<CurrencyItem> currencies, List<InventoryItem> inventory, int currencyIndex) {
-        this.currencies = currencies;
-        this.inventory = inventory;
-
-        updateView(currencyIndex);
+    public ProjectView(int selectedCurrencyIndex) {
+        updateView(selectedCurrencyIndex);
     }
 
     // Public
-    public void updateView(int currencyIndex) {
-        InventoryTable inventoryTable = new InventoryTable(inventory);
-
+    public void updateView(int selectedCurrencyIndex) {
         showAppHeader();
-        showCurrencySelector(currencyIndex);
+        showCurrencySelector(selectedCurrencyIndex);
         System.out.println("Inventory table:");
-        inventoryTable.generateTable();
+        InventoryTable.generateTable(selectedCurrencyIndex);
         showPrompt();
     }
 
@@ -43,9 +33,9 @@ public class ProjectView {
         System.out.println("2 Reusable Good ✅");
     }
 
-    private void showCurrencySelector(int index ) {
-        CurrencyItem selectedCurrency = currencies.get(index);
+    private void showCurrencySelector(int selectedCurrency ) {
+        CurrencyItem currency = Currencies.getCurrencies().get(selectedCurrency);
 
-        System.out.println("Currency selector: " + selectedCurrency.name());
+        System.out.println("Currency selected: " + currency.name());
     }
 }
