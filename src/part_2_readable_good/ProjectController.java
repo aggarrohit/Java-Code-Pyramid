@@ -28,9 +28,6 @@ public class ProjectController {
             view.showError();
         }
 
-        System.out.println("DEBUG 2");
-        System.out.println("model.getSelectedCurrencyIndex():" + model.getSelectedCurrencyIndex());
-
         view.updateView(model.getSelectedCurrencyIndex());
         requestInput();
     }

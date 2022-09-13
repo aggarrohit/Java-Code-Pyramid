@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="first potential prototype">
-      <change afterPath="$PROJECT_DIR$/src/part_2_readable_good/data/Currencies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part_2_readable_good/data/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part_2_readable_good/utilities/CurrencyConverter.java" afterDir="false" />
+    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="bug in setter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_readable_good/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_good/Project.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part_2_readable_good/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_good/ProjectController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part_2_readable_good/ProjectModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_good/ProjectModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_readable_good/ProjectView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_good/ProjectView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_readable_good/utilities/CurrencyItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_good/utilities/CurrencyItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_readable_good/utilities/InventoryItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_good/utilities/InventoryItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_readable_good/utilities/InventoryTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_good/utilities/InventoryTable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663107299434</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="bug in setter">
+      <created>1663111401862</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663111401862</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +146,7 @@
     <MESSAGE value="Changed the id position in InventoryItem" />
     <MESSAGE value="experimenting with a single MVC" />
     <MESSAGE value="first potential prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="first potential prototype" />
+    <MESSAGE value="bug in setter" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug in setter" />
   </component>
 </project>

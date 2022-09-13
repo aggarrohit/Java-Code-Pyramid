@@ -12,9 +12,12 @@ public class ProjectModel {
     }
 
     // Setter
-    public void setSelectedCurrencyIndex(int selectedCurrencyIndex) {
-        if (Currencies.getCurrencies().size() < selectedCurrencyIndex) {
-            this.selectedCurrencyIndex = selectedCurrencyIndex - 1;
+    public void setSelectedCurrencyIndex(int proposedIndex) {
+        if (Currencies.getCurrencies().size() >= proposedIndex) {
+            this.selectedCurrencyIndex = proposedIndex - 1;
+        }
+        else {
+            throw new IndexOutOfBoundsException();
         }
     }
 }
