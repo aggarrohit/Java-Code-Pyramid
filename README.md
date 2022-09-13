@@ -61,4 +61,48 @@ This improved code now exhibits the following features:
 
 ---
 
-Part 2 and 3 of the pyramid are comming soon...
+## 2. Reusability
+
+### About
+
+Reusability is the sole reason you can read this code, communicate with strangers online, and even program at all. Reusability allows us to express new ideas with little pieces of code written in the past.
+
+That is why reusability is an essential concept that should guide your software architecture. We commonly think of reusability in terms of [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (Don't Repeat Yourself). That is one aspect of it -- don't have duplicate code if you can abstract it properly. Reusability goes beyond that. It's about making clean, simple APIs that make your fellow programmer say, *"Yep, I know exactly what this code does!"* reusability makes your code a delight to work with, which means you can ship features faster.
+
+### In practice
+
+We will look at our previous example and expand upon it by adding a currency converter to handle our inventory's pricing in multiple countries:
+
+[Right click and choose open in a new tab](src/part_2_reusable_bad/Project.java)
+
+This code works, **but merely working is not the point of coding**. That's why we need to look at this with a stronger lens than just analyzing if it works and it's readable. We have to see if it's reusable. Do you notice any issues?
+
+Think about it!
+
+Alright, there are 3 main issues in the code above:
+
+1. The Currency Selector is coupled to the Inventory component.
+1. The Currency Converter is coupled to the Inventory component.
+1. The Inventory data is defined explicitly in the Inventory component, which is not provided to the component using an external API.
+
+Every function and module should do one thing. Otherwise, it can be harder to figure out what is going on when you look at the source code. The Inventory component should be for displaying an inventory, not converting and selecting currencies. The benefit of making modules and functions do one thing is that they are easier to test and they are easier to reuse. If we wanted to use our Currency Converter in another part of the application, we would have to include the whole Inventory component. That doesn't make sense if we only need to convert currency.
+
+Let's see what this looks like with more reusable components:
+
+**Project structure:**
+
+- `currency-converter.js` ([right click to open](#))
+- `App.jsx` ([right click to open](#)
+- `CurrencySelector.jsx` ([right click to open](#))
+- `Inventory.jsx` ([right click to open](#))
+
+This code has improved a lot. Now we have individual modules for **currency selection** and **currency conversion**. In addition, we can now provide the inventory data to our Inventory component. That means we could download the inventory data, for example, and send it to the Inventory component without ever having to modify its source code. This decoupling is the [Dependency Inversion Principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle), and it's a powerful way of creating reusable code.
+
+Now, it's time for a bit of caution. Before diving in and making everything reusable, it's important to realize that reusability requires that you have a good API for others to consume. If you don't, whoever uses your API could be hurt when you update it because you realize it wasn't thought out well enough. So, when should code NOT be reusable?
+
+- If you can't define a good API yet, don't do a separate module. Duplication is better than a bad foundation.
+- You don't expect to reuse your function or module soon.
+
+---
+
+Part 3 of the pyramid will come some day...
