@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="bug in setter">
+    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="Release candidate">
+      <change afterPath="$PROJECT_DIR$/src/part_1_readable_bad/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_readable_good/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_good/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_readable_good/ProjectModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_good/ProjectModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part_1_readable_bad/Inv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part_1_readable_bad/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_1_readable_bad/Project.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
