@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="Release candidate">
-      <change afterPath="$PROJECT_DIR$/src/part_1_readable_bad/Item.java" afterDir="false" />
+    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="Part 1 fixed in class">
+      <change afterPath="$PROJECT_DIR$/src/part_2_hope_is_better/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part_2_hope_is_better/ProjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part_2_hope_is_better/ProjectModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part_2_hope_is_better/ProjectView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_1_readable_bad/Inv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_1_readable_bad/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_1_readable_bad/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part_2_readable_good/ProjectView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_good/ProjectView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part_2_readable_good/data/Currencies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_good/data/Currencies.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +49,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="part_2_readable_good" />
@@ -150,5 +157,9 @@
     <MESSAGE value="first potential prototype" />
     <MESSAGE value="bug in setter" />
     <option name="LAST_COMMIT_MESSAGE" value="bug in setter" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

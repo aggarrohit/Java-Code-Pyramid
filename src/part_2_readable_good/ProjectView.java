@@ -20,7 +20,7 @@ public class ProjectView {
     }
 
     public void showPrompt() {
-        System.out.println("Choose a currency between dollars, rupees, or yuan's.");
+        System.out.println("Choose a currency between dollars, rupees, yuan's, kronas, sucres");
         System.out.print("Choose an option and then press enter: ");
     }
 
