@@ -2,6 +2,7 @@ package part_2_hope_is_better;
 
 import part_2_hope_is_better.utilities.CurrencyItem;
 import part_2_hope_is_better.utilities.InventoryItem;
+import part_2_hope_is_better.utilities.Table;
 
 import java.util.List;
 
@@ -27,7 +28,9 @@ public class ProjectView {
     }
 
     public void showTable(List<InventoryItem> inventory) {
+        Table table = new Table(inventory);
+
         System.out.println("Inventory table:");
-        System.out.println("🗓 placeholder");
+        table.showTable();
     }
 }
