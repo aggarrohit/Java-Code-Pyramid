@@ -1,4 +1,4 @@
-package part_2_hope_is_better;
+package part_2_readable_bad;
 
 import java.util.Scanner;
 
@@ -17,18 +17,18 @@ public class ProjectController {
 
     // Public
     public void requestInput() {
-        String input = scanner.nextLine();
+        String input = scanner.nextLine().trim();
 
         try {
-            int selectedOption = Integer.parseInt(input.trim());
+            int selectedOption = Integer.parseInt(input);
 
-            System.out.println("DEBUG: " + selectedOption);
+            model.setSelectedCurrencyIndex(selectedOption);
         }
-        catch (NumberFormatException exception) {
+        catch (NumberFormatException | IndexOutOfBoundsException exception) {
             view.showError();
         }
 
-        view.showPrompt();
+        view.updateView(model.getSelectedCurrencyIndex());
         requestInput();
     }
 }

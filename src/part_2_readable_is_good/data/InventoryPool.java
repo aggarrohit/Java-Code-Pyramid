@@ -1,6 +1,6 @@
-package part_2_hope_is_better.data;
+package part_2_readable_is_good.data;
 
-import part_2_hope_is_better.utilities.InventoryItem;
+import part_2_readable_is_good.utilities.InventoryItem;
 
 import java.util.List;
 import java.util.NoSuchElementException;

@@ -1,9 +1,9 @@
-package part_2_hope_is_better;
+package part_2_readable_is_good;
 
-import part_2_hope_is_better.data.CurrencyPool;
-import part_2_hope_is_better.data.InventoryPool;
-import part_2_hope_is_better.utilities.CurrencyItem;
-import part_2_hope_is_better.utilities.InventoryItem;
+import part_2_readable_is_good.data.CurrencyPool;
+import part_2_readable_is_good.data.InventoryPool;
+import part_2_readable_is_good.utilities.CurrencyItem;
+import part_2_readable_is_good.utilities.InventoryItem;
 
 import java.util.List;
 

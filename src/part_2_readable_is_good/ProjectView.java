@@ -1,8 +1,8 @@
-package part_2_hope_is_better;
+package part_2_readable_is_good;
 
-import part_2_hope_is_better.utilities.CurrencyItem;
-import part_2_hope_is_better.utilities.InventoryItem;
-import part_2_hope_is_better.utilities.Table;
+import part_2_readable_is_good.utilities.CurrencyItem;
+import part_2_readable_is_good.utilities.InventoryItem;
+import part_2_readable_is_good.utilities.Table;
 
 import java.util.List;
 

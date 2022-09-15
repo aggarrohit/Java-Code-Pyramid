@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="Created a coupled version of the table but haven't check if it works.">
-      <change afterPath="$PROJECT_DIR$/src/part_2_hope_is_better/utilities/Table.java" afterDir="false" />
+    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="The coupled table works!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_hope_is_better/ProjectView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_hope_is_better/ProjectView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663231530800</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="The coupled table works!">
+      <created>1663232491670</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663232491670</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,7 +189,8 @@
     <MESSAGE value="We check that the pools are correctly connected to the Model and they work!" />
     <MESSAGE value="We check that the pools are correctly connected to the Model, and they work!" />
     <MESSAGE value="Created a coupled version of the table but haven't check if it works." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a coupled version of the table but haven't check if it works." />
+    <MESSAGE value="The coupled table works!" />
+    <option name="LAST_COMMIT_MESSAGE" value="The coupled table works!" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
