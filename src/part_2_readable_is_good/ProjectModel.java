@@ -7,12 +7,13 @@ import part_2_readable_is_good.utilities.InventoryItem;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class ProjectModel {
     // Properties
     private final List<List<String>> inventory = parseInventory();
     private final List<CurrencyItem> currencies = CurrencyPool.getCurrencies();
-    private String selectedCurrencyName = currencies.get(0).name();
+    private String currencyName = currencies.get(0).name();
 
     // Getters
     public List<List<String>> getInventory() {
@@ -23,18 +24,22 @@ public class ProjectModel {
         return currencies;
     }
 
-    public String getSelectedCurrencyName() {
-        return selectedCurrencyName;
+    public String getCurrencyName() {
+        return currencyName;
     }
 
-    // Setters
-    // In the future, we will check if the number send by the user matches a currency in the CurrencyPool
+    // Setter
+    public void setCurrencyName(int selectedOption) throws NoSuchElementException {
+        CurrencyItem currency = CurrencyPool.getItemById(selectedOption);
+        currencyName = currency.name();
+    }
 
     // Private
     private List<List<String>> parseInventory() {
+        List<InventoryItem> pool = InventoryPool.getInventory();
         List<List<String>> result = new ArrayList<>();
 
-        for (InventoryItem item: InventoryPool.getInventory()) {
+        for (InventoryItem item: pool) {
             String name = item.name();
             String image = item.image();
             String description = item.description();

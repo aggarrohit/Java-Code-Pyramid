@@ -1,5 +1,6 @@
 package part_2_readable_is_good;
 
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class ProjectController {
@@ -22,13 +23,14 @@ public class ProjectController {
         try {
             int selectedOption = Integer.parseInt(input.trim());
 
-            System.out.println("DEBUG: " + selectedOption);
+            model.setCurrencyName(selectedOption);
+            view.showMenu(model.getCurrencies(), model.getCurrencyName(), model.getInventory());
         }
-        catch (NumberFormatException exception) {
+        catch (NumberFormatException | NoSuchElementException exception) {
             view.showError();
+            view.showPrompt(model.getCurrencies());
         }
 
-        view.showPrompt();
         requestInput();
     }
 }
