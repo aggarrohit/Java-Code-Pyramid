@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="The coupled table works!">
+    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="Added the currency selector.">
+      <change afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/utilities/CurrencyConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +158,35 @@
       <option name="project" value="LOCAL" />
       <updated>1663232491670</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added the table">
+      <created>1663255029266</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663255029266</updated>
+    </task>
+    <task id="LOCAL-00011" summary="new project management file.">
+      <created>1663255081039</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663255081039</updated>
+    </task>
+    <task id="LOCAL-00012" summary="new project management file.">
+      <created>1663255104644</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663255104644</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added the currency selector.">
+      <created>1663257594529</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663257594529</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,7 +200,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="practice" />
                       </list>
                     </value>
                   </entry>
@@ -192,7 +225,20 @@
     <MESSAGE value="We check that the pools are correctly connected to the Model, and they work!" />
     <MESSAGE value="Created a coupled version of the table but haven't check if it works." />
     <MESSAGE value="The coupled table works!" />
-    <option name="LAST_COMMIT_MESSAGE" value="The coupled table works!" />
+    <MESSAGE value="Added the table" />
+    <MESSAGE value="new project management file." />
+    <MESSAGE value="Added the currency selector." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the currency selector." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
