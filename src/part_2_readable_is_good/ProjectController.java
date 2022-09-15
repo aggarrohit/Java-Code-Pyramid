@@ -23,8 +23,8 @@ public class ProjectController {
         try {
             int selectedOption = Integer.parseInt(input.trim());
 
-            model.setCurrencyName(selectedOption);
-            view.showMenu(model.getCurrencies(), model.getCurrencyName(), model.getInventory());
+            model.handleOption(selectedOption);
+            view.showMenu(model.getCurrencies(), model.getSelectedCurrency(), model.getInventory());
         }
         catch (NumberFormatException | NoSuchElementException exception) {
             view.showError();

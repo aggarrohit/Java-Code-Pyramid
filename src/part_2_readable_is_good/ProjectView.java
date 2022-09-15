@@ -8,13 +8,13 @@ import java.util.List;
 
 public class ProjectView {
     // Constructor
-    public ProjectView(List<CurrencyItem> currencies, String selectedCurrencyName, List<List<String>> inventory) {
-        showMenu(currencies, selectedCurrencyName, inventory);
+    public ProjectView(List<CurrencyItem> currencies, CurrencyItem selectedCurrency, List<List<String>> inventory) {
+        showMenu(currencies, selectedCurrency, inventory);
     }
 
     // Public
-    public void showMenu(List<CurrencyItem> currencies, String selectedCurrencyName, List<List<String>> inventory) {
-        showCurrencyName(selectedCurrencyName);
+    public void showMenu(List<CurrencyItem> currencies, CurrencyItem selectedCurrency, List<List<String>> inventory) {
+        showCurrencyName(selectedCurrency);
         showTable(inventory);
         showPrompt(currencies);
     }
@@ -30,8 +30,8 @@ public class ProjectView {
     }
 
     // Private
-    private void showCurrencyName(String currencyName) {
-        System.out.println("Selected currency: " + currencyName);
+    private void showCurrencyName(CurrencyItem selectedCurrency) {
+        System.out.println("Selected currency: " + selectedCurrency.name());
     }
 
     private void showTable(List<List<String>> inventory) {
