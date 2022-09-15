@@ -1,6 +1,6 @@
-package part_2_readable_good;
+package part_2_readable_bad;
 
-import part_2_readable_good.data.Currencies;
+import part_2_readable_bad.data.Currencies;
 
 public class ProjectModel {
     // Properties

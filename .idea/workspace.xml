@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="bug in setter">
+    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="The coupled table works!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_readable_good/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_good/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_readable_good/ProjectModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_good/ProjectModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +47,11 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -115,7 +117,42 @@
       <option name="project" value="LOCAL" />
       <updated>1663111401862</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finished MCV skeleton">
+      <created>1663178807051</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663178807051</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Finished MCV skeleton">
+      <created>1663178859694</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663178859694</updated>
+    </task>
+    <task id="LOCAL-00007" summary="I create the Pool files but haven't check if they work.">
+      <created>1663229564714</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663229564714</updated>
+    </task>
+    <task id="LOCAL-00008" summary="We check that the pools are correctly connected to the Model, and they work!">
+      <created>1663231530800</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663231530800</updated>
+    </task>
+    <task id="LOCAL-00009" summary="The coupled table works!">
+      <created>1663232491670</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663232491670</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +185,16 @@
     <MESSAGE value="experimenting with a single MVC" />
     <MESSAGE value="first potential prototype" />
     <MESSAGE value="bug in setter" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug in setter" />
+    <MESSAGE value="Finished MCV skeleton" />
+    <MESSAGE value="I create the Pool files but haven't check if they work." />
+    <MESSAGE value="We check that the pools are correctly connected to the Model and they work!" />
+    <MESSAGE value="We check that the pools are correctly connected to the Model, and they work!" />
+    <MESSAGE value="Created a coupled version of the table but haven't check if it works." />
+    <MESSAGE value="The coupled table works!" />
+    <option name="LAST_COMMIT_MESSAGE" value="The coupled table works!" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

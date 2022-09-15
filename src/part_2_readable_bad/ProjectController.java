@@ -1,4 +1,4 @@
-package part_2_readable_good;
+package part_2_readable_bad;
 
 import java.util.Scanner;
 

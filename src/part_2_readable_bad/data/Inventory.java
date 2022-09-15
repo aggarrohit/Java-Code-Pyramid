@@ -1,6 +1,6 @@
-package part_2_readable_good.data;
+package part_2_readable_bad.data;
 
-import part_2_readable_good.utilities.InventoryItem;
+import part_2_readable_bad.utilities.InventoryItem;
 
 import java.util.List;
 
