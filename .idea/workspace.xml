@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="The coupled table works!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/utilities/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/utilities/Table.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +170,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="practice" />
                       </list>
                     </value>
                   </entry>

@@ -1,22 +1,20 @@
 package part_2_readable_is_good;
 
-import part_2_readable_is_good.utilities.CurrencyItem;
-import part_2_readable_is_good.utilities.InventoryItem;
 import part_2_readable_is_good.utilities.Table;
 
 import java.util.List;
 
 public class ProjectView {
     // Constructor
-    public ProjectView(int selectedCurrencyId, List<CurrencyItem> currencies, List<InventoryItem> inventory) {
-        showCurrencySelector(currencies, selectedCurrencyId);
+    public ProjectView(String selectedCurrencyName, List<List<String>> inventory) {
+        showCurrencySelector(selectedCurrencyName);
         showTable(inventory);
         showPrompt();
     }
 
     // Public
-    public void showCurrencySelector(List<CurrencyItem> currencies, int selectedCurrencyId) {
-        System.out.println("Selected currency id: " + selectedCurrencyId);
+    public void showCurrencySelector(String selectedCurrencyName) {
+        System.out.println("Selected currency: " + selectedCurrencyName);
     }
 
     public void showError() {
@@ -27,10 +25,12 @@ public class ProjectView {
         System.out.print("Choose between dollars, rupees, or yuan's: ");
     }
 
-    public void showTable(List<InventoryItem> inventory) {
-        Table table = new Table(inventory);
+    public void showTable(List<List<String>> inventory) {
+        List<Integer> columnWidths = List.of(15, 5, 50, 15);
+        List<String> headers = List.of("Product", "Image", "Description", "Price");
+        Table table = new Table(headers,inventory, columnWidths);
 
         System.out.println("Inventory table:");
-        table.showTable();
+        table.showData();
     }
 }
