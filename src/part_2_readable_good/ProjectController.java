@@ -23,14 +23,14 @@ public class ProjectController {
         try {
             int selectedOption = Integer.parseInt(input.trim());
 
-            model.handleOption(selectedOption);
-            view.showMenu(model.getCurrencies(), model.getSelectedCurrency(), model.getInventory());
+            model.setSelectedCurrency(selectedOption);
+            view.showData(model.getCurrencies(), model.getSelectedCurrency(), model.getInventory());
         }
         catch (NumberFormatException | NoSuchElementException exception) {
             view.showError();
-            view.showPrompt(model.getCurrencies());
         }
 
+        view.showPrompt();
         requestInput();
     }
 }
