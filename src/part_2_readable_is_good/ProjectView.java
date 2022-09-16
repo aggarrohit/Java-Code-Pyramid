@@ -1,5 +1,6 @@
 package part_2_readable_is_good;
 
+import part_2_readable_is_good.data.CurrencyConverter;
 import part_2_readable_is_good.utilities.CurrencyItem;
 import part_2_readable_is_good.utilities.DropDownMenu;
 import part_2_readable_is_good.utilities.InventoryItem;
@@ -11,9 +12,7 @@ import java.util.List;
 public class ProjectView {
     // Constructor
     public ProjectView(List<CurrencyItem> currencies, CurrencyItem selectedCurrency, List<InventoryItem> inventory) {
-        showCurrencyName(currencies, selectedCurrency);
-        showTable(inventory);
-        showPrompt();
+        showData(currencies, selectedCurrency, inventory);
     }
 
     // Public
@@ -25,6 +24,12 @@ public class ProjectView {
         System.out.print("Choose an option and then press enter: ");
     }
 
+    public void showData(List<CurrencyItem> currencies, CurrencyItem selectedCurrency, List<InventoryItem> inventory) {
+        showCurrencyName(currencies, selectedCurrency);
+        showTable(inventory, selectedCurrency);
+        showPrompt();
+    }
+
     // Private
     private void showCurrencyName(List<CurrencyItem> currencies, CurrencyItem selectedCurrency) {
         List<String> currencyNames = parsedCurrencyNames(currencies);
@@ -34,23 +39,23 @@ public class ProjectView {
         dropDownMenu.showData();
     }
 
-    private void showTable(List<InventoryItem> inventory) {
-        List<Integer> columnWidths = List.of(15, 5, 50, 5);
+    private void showTable(List<InventoryItem> inventory, CurrencyItem selectedCurrency) {
+        List<Integer> columnWidths = List.of(15, 5, 50, 10);
         List<String> headers = List.of("Product", "Image", "Description", "Price");
-        List<List<String>> body = parseInventory(inventory);
+        List<List<String>> body = parseInventory(inventory, selectedCurrency);
         Table table = new Table(columnWidths, headers, body);
 
         table.showData();
     }
 
-    private List<List<String>> parseInventory(List<InventoryItem> inventory) {
+    private List<List<String>> parseInventory(List<InventoryItem> inventory, CurrencyItem selectedCurrency) {
         List<List<String>> result = new ArrayList<>();
 
         for (InventoryItem item: inventory) {
             String name = item.name();
             String image = item.image();
             String description = item.description();
-            String price = item.price().toString();
+            String price = CurrencyConverter.convert(item.price(), selectedCurrency.id());
             List<String> data = List.of(name, image, description, price);
 
             result.add(data);
