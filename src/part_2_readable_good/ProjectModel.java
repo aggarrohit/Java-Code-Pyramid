@@ -1,34 +1,34 @@
 package part_2_readable_good;
 
-import part_2_readable_good.data.CurrencyPool;
-import part_2_readable_good.data.InventoryPool;
-import part_2_readable_good.utilities.CurrencyItem;
-import part_2_readable_good.utilities.InventoryItem;
+import part_2_readable_good.data.PoolCurrency;
+import part_2_readable_good.data.PoolInventory;
+import part_2_readable_good.utilities.ItemCurrency;
+import part_2_readable_good.utilities.ItemInventory;
 
 import java.util.List;
 import java.util.NoSuchElementException;
 
 public class ProjectModel {
     // Properties
-    private final List<CurrencyItem> currencies = CurrencyPool.getCurrencies();
-    private final List<InventoryItem> inventory = InventoryPool.getInventory();
-    private CurrencyItem selectedCurrency = currencies.get(0);
+    private final List<ItemCurrency> currencies = PoolCurrency.getCurrencies();
+    private final List<ItemInventory> inventory = PoolInventory.getInventory();
+    private ItemCurrency selectedCurrency = currencies.get(0);
 
     // Getters
-    public List<InventoryItem> getInventory() {
+    public List<ItemInventory> getInventory() {
         return inventory;
     }
 
-    public List<CurrencyItem> getCurrencies() {
+    public List<ItemCurrency> getCurrencies() {
         return currencies;
     }
 
-    public CurrencyItem getSelectedCurrency() {
+    public ItemCurrency getSelectedCurrency() {
         return selectedCurrency;
     }
 
     // Setter
     public void setSelectedCurrency(int selectedOption) throws NoSuchElementException {
-        selectedCurrency = CurrencyPool.getItemById(selectedOption);
+        selectedCurrency = PoolCurrency.getItemById(selectedOption);
     }
 }

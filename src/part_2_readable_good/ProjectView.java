@@ -1,21 +1,28 @@
 package part_2_readable_good;
 
-import part_2_readable_good.data.CurrencyConverter;
-import part_2_readable_good.utilities.CurrencyItem;
+import part_2_readable_good.utilities.CurrencyConverter;
+import part_2_readable_good.utilities.ItemCurrency;
 import part_2_readable_good.utilities.DropDownMenu;
-import part_2_readable_good.utilities.InventoryItem;
+import part_2_readable_good.utilities.ItemInventory;
 import part_2_readable_good.utilities.Table;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ProjectView {
     // Constructor
-    public ProjectView(List<CurrencyItem> currencies, CurrencyItem selectedCurrency, List<InventoryItem> inventory) {
+    public ProjectView(List<ItemCurrency> currencies, ItemCurrency selectedCurrency, List<ItemInventory> inventory) {
         showData(currencies, selectedCurrency, inventory);
     }
 
     // Public
+    public void showData(List<ItemCurrency> currencies, ItemCurrency selectedCurrency, List<ItemInventory> inventory) {
+        generateDropDownMenu(currencies, selectedCurrency);
+        generateTable(inventory, selectedCurrency);
+        showPrompt();
+    }
+
     public void showError() {
         System.out.println("⚠️ Invalid option");
     }
@@ -24,22 +31,16 @@ public class ProjectView {
         System.out.print("Choose an option and then press enter: ");
     }
 
-    public void showData(List<CurrencyItem> currencies, CurrencyItem selectedCurrency, List<InventoryItem> inventory) {
-        showCurrencyName(currencies, selectedCurrency);
-        showTable(inventory, selectedCurrency);
-        showPrompt();
-    }
-
     // Private
-    private void showCurrencyName(List<CurrencyItem> currencies, CurrencyItem selectedCurrency) {
+    private void generateDropDownMenu(List<ItemCurrency> currencies, ItemCurrency selectedCurrency) {
         List<String> currencyNames = parsedCurrencyNames(currencies);
         DropDownMenu dropDownMenu = new DropDownMenu("Available currencies", currencyNames);
 
-        System.out.println("Selected currency: " + selectedCurrency.name());
+        System.out.println("Selected currenc2y: " + selectedCurrency.name());
         dropDownMenu.showData();
     }
 
-    private void showTable(List<InventoryItem> inventory, CurrencyItem selectedCurrency) {
+    private void generateTable(List<ItemInventory> inventory, ItemCurrency selectedCurrency) {
         List<Integer> columnWidths = List.of(15, 5, 50, 10);
         List<String> headers = List.of("Product", "Image", "Description", "Price");
         List<List<String>> body = parseInventory(inventory, selectedCurrency);
@@ -48,14 +49,14 @@ public class ProjectView {
         table.showData();
     }
 
-    private List<List<String>> parseInventory(List<InventoryItem> inventory, CurrencyItem selectedCurrency) {
+    private List<List<String>> parseInventory(List<ItemInventory> inventory, ItemCurrency selectedCurrency) {
         List<List<String>> result = new ArrayList<>();
 
-        for (InventoryItem item: inventory) {
+        for (ItemInventory item: inventory) {
             String name = item.name();
             String image = item.image();
             String description = item.description();
-            String price = CurrencyConverter.convert(item.price(), selectedCurrency.id());
+            String price = CurrencyConverter.convert(item.price(), selectedCurrency);
             List<String> data = List.of(name, image, description, price);
 
             result.add(data);
@@ -64,15 +65,7 @@ public class ProjectView {
         return result;
     }
 
-    private List<String> parsedCurrencyNames(List<CurrencyItem> currencies) {
-        List<String> result = new ArrayList<>();
-
-        for (CurrencyItem item: currencies) {
-            String name = item.name();
-
-            result.add(name);
-        }
-
-        return result;
+    private List<String> parsedCurrencyNames(List<ItemCurrency> currencies) {
+        return currencies.stream().map(ItemCurrency::name).collect(Collectors.toList());
     }
 }

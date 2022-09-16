@@ -32,8 +32,10 @@ public class DropDownMenu {
         for (int index = 0; index < options.size(); index++) {
             int number = index + 1;
             String name = options.get(index);
+            String format = "%d. %s ";
+            String data = String.format(format, number, name);
 
-            result.append(number).append(". ").append(name).append(", ");
+            result.append(data);
         }
 
         System.out.println(result);
