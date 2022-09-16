@@ -1,4 +1,4 @@
-package part_2_readable_is_good.utilities;
+package part_2_readable_good.utilities;
 
 import java.util.Arrays;
 import java.util.List;

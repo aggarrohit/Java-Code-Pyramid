@@ -1,4 +1,4 @@
-package part_2_readable_is_good;
+package part_2_readable_good;
 
 public class Project {
     // Constructor

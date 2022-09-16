@@ -1,6 +1,6 @@
-package part_2_readable_is_good.data;
+package part_2_readable_good.data;
 
-import part_2_readable_is_good.utilities.CurrencyItem;
+import part_2_readable_good.utilities.CurrencyItem;
 
 import java.util.List;
 import java.util.NoSuchElementException;

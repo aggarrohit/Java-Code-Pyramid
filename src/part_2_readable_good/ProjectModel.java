@@ -1,10 +1,10 @@
-package part_2_readable_is_good;
+package part_2_readable_good;
 
-import part_2_readable_is_good.data.CurrencyPool;
-import part_2_readable_is_good.data.InventoryPool;
-import part_2_readable_is_good.utilities.CurrencyConverter;
-import part_2_readable_is_good.utilities.CurrencyItem;
-import part_2_readable_is_good.utilities.InventoryItem;
+import part_2_readable_good.data.CurrencyPool;
+import part_2_readable_good.data.InventoryPool;
+import part_2_readable_good.utilities.CurrencyConverter;
+import part_2_readable_good.utilities.CurrencyItem;
+import part_2_readable_good.utilities.InventoryItem;
 
 import java.util.ArrayList;
 import java.util.List;

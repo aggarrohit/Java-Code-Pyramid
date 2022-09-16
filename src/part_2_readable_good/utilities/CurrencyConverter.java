@@ -1,6 +1,6 @@
-package part_2_readable_is_good.utilities;
+package part_2_readable_good.utilities;
 
-import part_2_readable_is_good.data.CurrencyPool;
+import part_2_readable_good.data.CurrencyPool;
 
 public class CurrencyConverter {
     // Public

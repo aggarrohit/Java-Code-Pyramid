@@ -1,8 +1,8 @@
-package part_2_readable_is_good;
+package part_2_readable_good;
 
-import part_2_readable_is_good.utilities.CurrencyItem;
-import part_2_readable_is_good.utilities.CurrencySelector;
-import part_2_readable_is_good.utilities.Table;
+import part_2_readable_good.utilities.CurrencyItem;
+import part_2_readable_good.utilities.CurrencySelector;
+import part_2_readable_good.utilities.Table;
 
 import java.util.List;
 
