@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="Reverted to classroom level.">
+    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="Replaced coupled table with a decoupled one.">
+      <change afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/utilities/DropDownMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project_Management.numbers" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Management.numbers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/utilities/CurrencyConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/utilities/CurrencySelector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/utilities/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/utilities/Table.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663257594529</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Replaced coupled table with a decoupled one.">
+      <created>1663320142878</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663320142878</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,7 +234,8 @@
     <MESSAGE value="new project management file." />
     <MESSAGE value="Added the currency selector." />
     <MESSAGE value="Reverted to classroom level." />
-    <option name="LAST_COMMIT_MESSAGE" value="Reverted to classroom level." />
+    <MESSAGE value="Replaced coupled table with a decoupled one." />
+    <option name="LAST_COMMIT_MESSAGE" value="Replaced coupled table with a decoupled one." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
