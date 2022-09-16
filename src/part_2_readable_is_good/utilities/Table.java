@@ -1,25 +1,26 @@
 package part_2_readable_is_good.utilities;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class Table {
     // Properties
-    List<String> header;
-    List<List<String>> body;
-    List<Integer> columnWidths;
-    String format;
+    private final List<Integer> columnWidth;
+    private final List<String> header;
+    private final List<List<String>> body;
+    private final String format;
+    private final String border;
 
     // Constructor
-    public Table(List<String> header, List<List<String>> body, List<Integer> columnWidths) {
+    public Table(List<Integer> columnWidth, List<String> header, List<List<String>> body) {
+        this.columnWidth = columnWidth;
         this.header = header;
         this.body = body;
-        this.columnWidths = columnWidths;
-        this.format = createFormat(columnWidths);
+        this.format = createFormat();
+        this.border = createBorder();
     }
 
     // Public
-    public void showData() {
+    public void showData()  {
         generateBorder();
         generateHeader();
         generateBorder();
@@ -28,40 +29,37 @@ public class Table {
     }
 
     // Private
-    private String createFormat(List<Integer> columnWidths) {
+    private String createFormat() {
         StringBuilder result = new StringBuilder();
+        String prefix = "| %-";
+        String postfix = "s ";
+        String endingCharacter = "|%n";
 
-        for (Integer item : columnWidths) {
-            result.append("| %-").append(item).append("s ");
+        for (int item: columnWidth) {
+            result.append(prefix).append(item).append(postfix);
         }
-        result.append("|%n");
+        result.append(endingCharacter);
+
+        return result.toString();
+    }
+
+    private String createBorder() {
+        StringBuilder result = new StringBuilder();
+        String prefix = "+";
+        String endingCharacter = "+";
+
+        for (int item: columnWidth) {
+            result.append(prefix).append(createBorderCell(item));
+        }
+        result.append(endingCharacter);
 
         return result.toString();
     }
 
     private String createBorderCell(int width) {
-        char character = '-';
         int padding = 2;
-        char[] repeatCharacters = new char[width + padding];
-        String result;
 
-        Arrays.fill(repeatCharacters, character);
-        result = new String(repeatCharacters);
-
-        return result;
-    }
-
-    private void generateBorder() {
-        StringBuilder result = new StringBuilder();
-
-        for (Integer item : columnWidths) {
-            String cell = createBorderCell(item);
-
-            result.append("+").append(cell);
-        }
-        result.append("+");
-
-        System.out.println(result);
+        return "-".repeat(Math.max(0, width + padding));
     }
 
     private void generateHeader() {
@@ -72,5 +70,9 @@ public class Table {
         for (List<String> item : body) {
             System.out.format(format, item.toArray());
         }
+    }
+
+    private void generateBorder() {
+        System.out.println(border);
     }
 }

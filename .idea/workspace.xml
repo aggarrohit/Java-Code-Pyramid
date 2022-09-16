@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="Added the currency selector.">
-      <change afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/utilities/CurrencyConverter.java" afterDir="false" />
+    <list default="true" id="c95f9e31-a9bd-43d5-b786-5dd12a44d621" name="Changes" comment="Reverted to classroom level.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Management.numbers" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Management.numbers" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/ProjectView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/utilities/CurrencyConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/utilities/CurrencySelector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/part_2_readable_is_good/utilities/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/part_2_readable_is_good/utilities/Table.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +230,8 @@
     <MESSAGE value="Added the table" />
     <MESSAGE value="new project management file." />
     <MESSAGE value="Added the currency selector." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the currency selector." />
+    <MESSAGE value="Reverted to classroom level." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reverted to classroom level." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
