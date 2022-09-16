@@ -57,9 +57,9 @@ public class Table {
     }
 
     private String createBorderCell(int width) {
-        int padding = 2;
+        int blankSpacesBetweenCells = 2;
 
-        return "-".repeat(Math.max(0, width + padding));
+        return "-".repeat(Math.max(0, width + blankSpacesBetweenCells));
     }
 
     private void generateHeader() {
