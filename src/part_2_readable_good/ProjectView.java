@@ -1,8 +1,8 @@
 package part_2_readable_good;
 
 import part_2_readable_good.utilities.CurrencyConverter;
-import part_2_readable_good.utilities.ItemCurrency;
 import part_2_readable_good.utilities.DropDownMenu;
+import part_2_readable_good.utilities.ItemCurrency;
 import part_2_readable_good.utilities.ItemInventory;
 import part_2_readable_good.utilities.Table;
 
