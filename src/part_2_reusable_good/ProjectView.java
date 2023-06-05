@@ -18,8 +18,8 @@ public class ProjectView {
 
     // Public
     public void showData(List<ItemCurrency> currencies, ItemCurrency selectedCurrency, List<ItemInventory> inventory) {
-        generateDropDownMenu(currencies, selectedCurrency);
         generateTable(inventory, selectedCurrency);
+        generateDropDownMenu(currencies, selectedCurrency);
         showPrompt();
     }
 
