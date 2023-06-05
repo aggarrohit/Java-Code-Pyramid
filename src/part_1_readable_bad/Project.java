@@ -10,50 +10,22 @@ package part_1_readable_bad;
 import java.util.List;
 
 public class Project {
-    String currency = "usd"; // currency
+    String c = "usd"; // currency
     // inventory
-    List<Item> inventory = List.of(
-            new Item(0, "Flashlight", "🔦", "A really great flashlight", 100, "usd"),
-            new Item(1, "Tin can", "🥫", "Pretty much what you would expect from a tin can", 32, "usd"),
-            new Item(2, "Cardboard Box", "📦", "It holds things", 5, "usd")
-    );
+    List<Inv> inv = List.of(new Inv("Flashlight", "🔦", "A really great flashlight", 100, 1, "usd"),
+            new Inv("Tin can", "🥫", "Pretty much what you would expect from a tin can", 32, 2, "usd"),
+            new Inv("Cardboard Box", "📦", "It holds things", 5, 3, "usd"));
 
     public Project() {
-        System.out.println("1 Readable Bad ❌ (fixed in class 😃)");
-        System.out.println("Global currency: " + currency);
-
-        generateTable();
-    }
-
-    private void generateTable() {
-        String border = "+-----------------+-------+----------------------------------------------------+-------+%n";
-        String header = "| Product         | Image | Description                                        | Price |%n";
-
-        System.out.format(border);
-        System.out.format(header);
-        System.out.format(border);
-        generateRows(inventory);
-        System.out.format(border);
-    }
-
-    private void generateRows(List<Item> inventory) {
+        System.out.println("1 Readable Bad ❌");
+        System.out.println("Global currency: " + c);
         String format = "| %-15s | %-5s | %-50s | %-5d |%n";
-
-        for (Item item : inventory) {
-            String product = item.product();
-            String image = item.image();
-            String description = item.description();
-            int price = item.price();
-
-            System.out.format(format, product, image, description, price);
+        System.out.format("+-----------------+-------+----------------------------------------------------+-------+%n");
+        System.out.format("| Product         | Image | Description                                        | Price |%n");
+        System.out.format("+-----------------+-------+----------------------------------------------------+-------+%n");
+        for (int i = 0; i < inv.size(); i++) {
+            System.out.format(format, inv.get(i).product(), inv.get(i).img(), inv.get(i).desc(), inv.get(i).price());
         }
+        System.out.format("+-----------------+-------+----------------------------------------------------+-------+%n");
     }
 }
-
-
-
-
-
-
-
-
