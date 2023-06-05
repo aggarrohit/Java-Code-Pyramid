@@ -1,6 +1,6 @@
-package part_2_readable_bad.utilities;
+package part_2_reusable_bad.utilities;
 
-import part_2_readable_bad.data.Inventory;
+import part_2_reusable_bad.data.Inventory;
 
 public class InventoryTable {
     // Properties

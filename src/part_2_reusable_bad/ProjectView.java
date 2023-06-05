@@ -1,8 +1,8 @@
-package part_2_readable_bad;
+package part_2_reusable_bad;
 
-import part_2_readable_bad.data.Currencies;
-import part_2_readable_bad.utilities.CurrencyItem;
-import part_2_readable_bad.utilities.InventoryTable;
+import part_2_reusable_bad.data.Currencies;
+import part_2_reusable_bad.utilities.CurrencyItem;
+import part_2_reusable_bad.utilities.InventoryTable;
 
 public class ProjectView {
     // Constructor

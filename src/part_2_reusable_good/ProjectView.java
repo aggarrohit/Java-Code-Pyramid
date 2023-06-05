@@ -1,10 +1,10 @@
-package part_2_readable_good;
+package part_2_reusable_good;
 
-import part_2_readable_good.utilities.CurrencyConverter;
-import part_2_readable_good.utilities.DropDownMenu;
-import part_2_readable_good.utilities.ItemCurrency;
-import part_2_readable_good.utilities.ItemInventory;
-import part_2_readable_good.utilities.Table;
+import part_2_reusable_good.utilities.CurrencyConverter;
+import part_2_reusable_good.utilities.DropDownMenu;
+import part_2_reusable_good.utilities.ItemCurrency;
+import part_2_reusable_good.utilities.ItemInventory;
+import part_2_reusable_good.utilities.Table;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +36,7 @@ public class ProjectView {
         List<String> currencyNames = parsedCurrencyNames(currencies);
         DropDownMenu dropDownMenu = new DropDownMenu("Available currencies", currencyNames);
 
-        System.out.println("Selected currenc2y: " + selectedCurrency.name());
+        System.out.println("Selected currency: " + selectedCurrency.name());
         dropDownMenu.showData();
     }
 

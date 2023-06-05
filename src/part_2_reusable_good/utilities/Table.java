@@ -1,4 +1,4 @@
-package part_2_readable_good.utilities;
+package part_2_reusable_good.utilities;
 
 import java.util.List;
 

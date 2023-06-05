@@ -1,6 +1,6 @@
-package part_2_readable_good.data;
+package part_2_reusable_good.data;
 
-import part_2_readable_good.utilities.ItemInventory;
+import part_2_reusable_good.utilities.ItemInventory;
 
 import java.util.List;
 import java.util.NoSuchElementException;

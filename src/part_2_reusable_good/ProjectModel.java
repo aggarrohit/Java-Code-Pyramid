@@ -1,9 +1,9 @@
-package part_2_readable_good;
+package part_2_reusable_good;
 
-import part_2_readable_good.data.PoolCurrency;
-import part_2_readable_good.data.PoolInventory;
-import part_2_readable_good.utilities.ItemCurrency;
-import part_2_readable_good.utilities.ItemInventory;
+import part_2_reusable_good.data.PoolCurrency;
+import part_2_reusable_good.data.PoolInventory;
+import part_2_reusable_good.utilities.ItemCurrency;
+import part_2_reusable_good.utilities.ItemInventory;
 
 import java.util.List;
 import java.util.NoSuchElementException;

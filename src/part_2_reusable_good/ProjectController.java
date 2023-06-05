@@ -1,4 +1,4 @@
-package part_2_readable_good;
+package part_2_reusable_good;
 
 import java.util.NoSuchElementException;
 import java.util.Scanner;
